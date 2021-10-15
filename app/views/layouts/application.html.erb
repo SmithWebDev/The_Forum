@@ -9,9 +9,12 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
-</head>
+  </head>
 
   <body>
-    <%= yield %>
+    <%= render "shared/nav" %>
+    <div class="container mt-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
