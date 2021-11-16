@@ -10,4 +10,4 @@ class Discussion < ApplicationRecord
   def to_param
     "#{id}-#{name.downcase.to_s[0...100]}".parameterize
   end
-end
+enrd
